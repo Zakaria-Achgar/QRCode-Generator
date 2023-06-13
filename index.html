@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <h1>QR Code Generator</h1>
+        <div class="row">
+            <input type="color" class="light" value="#ffffff">
+            <input type="color" class="dark">
+            <select class="sizes">
+                <option value="100">100X100</option>
+                <option value="200">200X200</option>
+                <option value="300">300X300</option>
+                <option selected value="400">400X400</option>
+                <option value="500">500X500</option>
+                <option value="600">600X600</option>
+                <option value="700">700X700</option>
+                <option value="800">800X800</option>
+                <option value="900">900X900</option>
+                <option value="1000">1000X1000</option>
+            </select>
+        </div>
+        <input type="text" class="qr-text" placeholder="Enter your name">
+        <input type="text" class="qr-text" placeholder="Enter your street">
+        <input type="number" class="qr-text" placeholder="Enter your zip code">
+        <input type="text" class="qr-text" placeholder="Enter your city">
+        <input type="text" class="qr-text" placeholder="Enter your country">
+        <input type="email" class="qr-text" placeholder="Enter your email">
+        <input type="tel" class="qr-text" placeholder="Enter your phone">
+        <input type="url" class="qr-text" placeholder="Enter your website">
+        <div id="qr-code"></div>
+        <div class="action-container">
+            <a href="#" class="download btn" download="QRCode">
+                <span>Download</span>
+                <img src="download.svg">
+            </a>
+            <button class="btn share-btn">
+                <span>Share</span>
+                <img src="share.svg">
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</html>
